@@ -1,0 +1,10 @@
+venv/
+.idea/
+.env
+*.session
+*.session-journal
+__pycache__/
+pyroskeletonbot.ini
+unknown_errors.txt
+*.log*
+database.py

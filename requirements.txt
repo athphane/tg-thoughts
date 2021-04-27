@@ -1,0 +1,9 @@
+pyrogram
+tgcrypto
+requests
+urllib3
+pymongo
+dnspython
+APScheduler
+psutil
+aiohttp
