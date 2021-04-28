@@ -2,8 +2,8 @@
 api_id = 123456
 api_hash = epic-key-here
 
-[tgthoughtsbot]
-bot_username = @tgthoughtsbot
+[pyroskeletonbot]
+bot_username = @pyroskeletonbot
 bot_token = bot-token-here
 admins = [user, ids, here]
 log_group = log-group-id

@@ -1,5 +1,6 @@
 import ast
 import logging
+import os
 import sys
 from configparser import ConfigParser
 from logging.handlers import TimedRotatingFileHandler
@@ -7,6 +8,10 @@ from logging.handlers import TimedRotatingFileHandler
 from apscheduler.schedulers.asyncio import AsyncIOScheduler
 
 from tgthoughtsbot.tgthoughtsbot import TgThoughtsBot
+
+# Created logs folder if it is not there. Needed for logging.
+if not os.path.exists('logs'):
+    os.makedirs('logs')
 
 # Logging at the start to catch everything
 logging.basicConfig(
