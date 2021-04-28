@@ -16,7 +16,8 @@ if not os.path.exists('logs'):
 # Logging at the start to catch everything
 logging.basicConfig(
     format='%(asctime)s - %(name)s - %(levelname)s - %(message)s',
-    level=logging.INFO,
+    datefmt='%Y/%m/%d %I:%M:%S %p',
+    level=logging.WARNING,
     handlers=[
         TimedRotatingFileHandler(f"logs/{TgThoughtsBot.__name__.lower()}.log", when="midnight", encoding=None,
                                  delay=False, backupCount=10),
