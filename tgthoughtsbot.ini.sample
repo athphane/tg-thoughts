@@ -1,0 +1,15 @@
+[pyrogram]
+api_id = 123456
+api_hash = epic-key-here
+
+[tgthoughtsbot]
+bot_username = @tgthoughtsbot
+bot_token = bot-token-here
+admins = [user, ids, here]
+log_group = log-group-id
+
+[mongo]
+url = localhost
+db_name = db-name
+db_username = db-username
+db_password = db-password

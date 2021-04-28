@@ -1,4 +1,4 @@
-# PyroSkeletonBot
+# TgThoughtsBot
 A Telegram Bot based on [Pyrogram](https://github.com/pyrogram/pyrogram)
 
 This is a base skeleton that I use for my bot development process.
@@ -24,16 +24,16 @@ python -m pyroskeleton
 ```
 
 ## Developing
-To add extra modules to the bot, simply add the code into [pyroskeletonbot/plugins](pyroskeletonbot/plugins). Each file
+To add extra modules to the bot, simply add the code into [tgthoughtsbot/plugins](tgthoughtsbot/plugins). Each file
 that is added to the 'plugins' directory should have the following code at a minimum.
 ```python
 from pyrogram.types import Message
-from pyroskeletonbot.utils import custom_filters
+from tgthoughtsbot.utils import custom_filters
 
-from pyroskeletonbot import PyroSkeletonBot
+from tgthoughtsbot import TgThoughtsBot
 
-@PyroSkeletonBot.on_message(custom_filters.command('sample', ['.']))
-async def module_name(bot: PyroSkeletonBot, message: Message):
+@TgThoughtsBot.on_message(custom_filters.command('sample', ['.']))
+async def module_name(bot: TgThoughtsBot, message: Message):
     await message.edit("This is a sample module")
 ```
 
