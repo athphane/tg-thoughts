@@ -1,10 +1,11 @@
-venv/
+*venv/
 .idea/
 .env
 *.session
 *.session-journal
 __pycache__/
-pyroskeletonbot.ini
+*.ini
 unknown_errors.txt
 *.log*
 database.py
+.vscode/
